@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/styles/main.css">
-    <title>My Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <title>My Project</title>
 </head>
 
-<body><div class="navbar bg-base-100 shadow-sm">
+<body>
+  <div class="navbar bg-base-100 shadow-sm">
     <div class="flex-1">
       <a class="btn btn-ghost text-xl">Gym Therapy</a>
     </div>
@@ -15,13 +17,15 @@
       <div class="dropdown dropdown-end">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
           <div class="indicator">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
             <span class="badge badge-sm indicator-item">8</span>
           </div>
         </div>
-        <div
-          tabindex="0"
-          class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+        <div tabindex="0" class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
           <div class="card-body">
             <span class="text-lg font-bold"></span>
             <span class="text-info"></span>
@@ -32,16 +36,12 @@
         </div>
       </div>
       <div class="dropdown dropdown-end">
-        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-          <div class="w-10 rounded-full">
-            <img
-              alt="Tailwind CSS Navbar component"
-              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+        <div tabindex="0" role="button" class="btn btn-ghost btn-square avatar">
+          <div class="w-10">
+            <img alt="Tailwind CSS Navbar component" src="/src/assets/menuicon.svg" />
           </div>
         </div>
-        <ul
-          tabindex="-1"
-          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
           <li>
             <a class="justify-between">
               Profile
@@ -58,5 +58,206 @@
       </div>
     </div>
   </div>
+
+  <br>
+
+  <div class="flex justify-center gap-10">
+    <div class="card w-96 bg-base-100 shadow-sm h-fit">
+      <div class="card-body">
+        <div class="flex justify-between">
+          <h2 class="text-3xl font-bold">Basic</h2>
+          <span class="text-xl">$12/wk</span>
+        </div>
+        <ul class="mt-6 flex flex-col gap-2 text-xs">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Product discounts</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>News on new products</span>
+          </li>
+        </ul>
+
+        <div class="mt-6">
+          <button class="btn btn-primary btn-block">Subscribe</button>
+        </div>
+
+        <!-- Open the modal using ID.showModal() method -->
+        <button class="btn" onclick="my_modal_1.showModal()">Learn More!</button>
+        <dialog id="my_modal_1" class="modal">
+          <div class="modal-box">
+            <h3 class="text-lg font-bold">Basic Membership</h3>
+            <p class="py-4">
+            <ul class="list-disc">
+              <li>Discounted products will be energy drinks and protein drinks at 20% off.</li>
+              <li>You'll also recieve the earliest news on our latest products as soon as they are ready for the
+                marketplace.</li>
+            </ul>
+            </p>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+
+      </div>
+    </div>
+
+    <div class="card w-96 bg-base-100 shadow-sm h-fit">
+      <div class="card-body">
+        <span class="badge badge-xs badge-warning">Most Popular</span>
+        <div class="flex justify-between">
+          <h2 class="text-3xl font-bold">Premium</h2>
+          <span class="text-xl">$29/mo</span>
+        </div>
+        <ul class="mt-6 flex flex-col gap-2 text-xs">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Greater product discounts</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Early access to new products</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Guaranteed invitations to events</span>
+          </li>
+        </ul>
+        <div class="mt-6">
+          <button class="btn btn-primary btn-block">Subscribe</button>
+        </div>
+      <!-- The button to open modal -->
+<label for="my_modal_7" class="btn">Learn More!</label>
+
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my_modal_7" class="modal-toggle" />
+<div class="modal" role="dialog">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Premium Membership</h3>
+    <p class="py-4"> 
+      <ul class="list-disc">
+              <li>
+                Discounted products will be energy drinks, protein drinks, protein bar, and the protein powder at 35% 
+              </li>
+              <li>
+                When a product is ready for purchase we will notify you to try it early
+              </li>
+              <li>
+                If we have an event you will have a guaranteed invite sent 
+              </li>
+            </ul>
+    </p>
+    <div class="modal-action">
+      <label for="my_modal_7" class="btn">Close!</label>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div class="card w-96 bg-base-100 shadow-sm h-fit">
+      <div class="card-body">
+        <div class="flex justify-between">
+          <h2 class="text-3xl font-bold">Deluxe</h2>
+          <span class="text-xl">$59/yr</span>
+        </div>
+        <ul class="mt-6 flex flex-col gap-2 text-xs">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Huge discounts on products</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Specialized Therapist</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>reserved invitation spots for events</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Access to our facilities before opening time</span>
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" class="size-4 me-2 inline-block text-success" fill="none"
+              viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Early access to new products</span>
+          </li>
+        </ul>
+        <div class="mt-6">
+          <button class="btn btn-primary btn-block">Subscribe</button>
+        </div>
+      <!-- The button to open modal -->
+<label for="my_modal_6" class="btn">Learn More!</label>
+
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+<div class="modal" role="dialog">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Deluxe Membership</h3>
+    <p class="py-4"> 
+      <ul class="list-disc">
+              <li>
+                 You will recieve a discount of 45% on all of our products
+              </li>
+              <li>
+                You will get a specialized therapist for any of your mental needs
+              </li>
+              <li>
+                When we have events you will have a reserved spot just for you
+              </li>
+              <li>
+                Allowed into our facilities early meaning before opening time 
+              </li>
+              <li>
+                When a product is ready for purchase we will notify you to try it early
+              </li>
+            </ul>
+    </p>
+    <div class="modal-action">
+      <label for="my_modal_6" class="btn">Close!</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
 </body>
 </html>

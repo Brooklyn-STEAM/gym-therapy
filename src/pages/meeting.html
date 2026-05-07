@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/styles/main.css">
     <title>My Project</title>
-  
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
 </head>
 <body class="bg-base-300 min-h-screen"> 
   <div class="navbar bg-base-100 shadow-sm">
@@ -67,7 +67,7 @@
   <div class="hero bg-base-300 ">
     <div class="hero-content text-center">
       <div class="max-w-md">
-        <h1 class="text-5xl font-bold"> Welcome to the meeting page</h1>
+        <h1 class="text-5xl font-bold"> Book a Session </h1>
         <p class="py-6">
           The meeting page is to make a appiontment with a therapist online or in person.
         </p>
@@ -81,7 +81,8 @@
   
   <div class="card w-96 bg-base-100 card-xl shadow-sm">
     <div class="card-body">
-      <h2 class="card-title">In Person </h2>
+      <h2 class="card-title">In Person<iconify-icon icon="codicon:person" width="30" height="50"></iconify-icon> </h2>  
+      <h3> submission form</h3>   
       <label class="input validator">
         <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <g
@@ -162,8 +163,9 @@
   
   <div class="card w-96 bg-base-100 card-xl shadow-sm">
     <div class="card-body">
-      <h2 class="card-title">Virtual </h2>
-      <label class="input validator">
+      <h2 class="card-title">Virtual <iconify-icon icon="streamline-freehand:desk-computer-base-work-standing-user-1" width="30" height="25"></iconify-icon></h2>
+      <h3> submission form</h3>  
+       <label class="input validator">
         <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <g
             stroke-linejoin="round"
@@ -236,6 +238,8 @@
       <div class="validator-hint hidden">Enter valid email address</div>
    <div class="justify-end card-actions">
         <button class="btn btn-primary">Submit</button>
+        
+
       </div>
     </div>
   </div>

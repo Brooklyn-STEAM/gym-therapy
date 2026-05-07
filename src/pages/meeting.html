@@ -1,164 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/src/styles/main.css">
-  <title>My Project</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/main.css">
+    <title>My Project</title>
+  
 </head>
-
-<body>
+<body class="bg-base-300 min-h-screen"> 
   <div class="navbar bg-base-100 shadow-sm">
-    <div class="flex-1">
-      <a class="btn btn-ghost text-xl">Gym Therapy</a>
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl">Gym Therapy</a>
+  </div>
+  <div class="flex-none">
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+        <div class="indicator">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /> </svg>
+          <span class="badge badge-sm indicator-item">0</span>
+        </div>
+      </div>
+      <div
+        tabindex="0"
+        class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+        <div class="card-body">
+          <span class="text-lg font-bold"></span>
+          <span class="text-info"></span>
+          <div class="card-actions">
+            <button class="btn btn-primary btn-block"></button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flex-none">
-      <div class="dropdown dropdown-end">
-        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-          <div class="indicator">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-            <span class="badge badge-sm indicator-item">8</span>
-          </div>
-        </div>
-        <div tabindex="0" class="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
-          <div class="card-body">
-            <span class="text-lg font-bold"></span>
-            <span class="text-info"></span>
-            <div class="card-actions">
-              <button class="btn btn-primary btn-block">View cart</button>
-            </div>
-          </div>
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square avatar">
+        <div class="w-10">
+          <img
+            alt="Tailwind CSS Navbar component"
+            src="/src/assets/menuicon.svg" />
         </div>
       </div>
-      <div class="dropdown dropdown-end">
-        <div tabindex="0" role="button" class="btn btn-ghost btn-square avatar">
-          <div class="w-10">
-            <img
-              alt="Tailwind CSS Navbar component"
-              src="/src/assets/menuicon.svg" />
-          </div>
-        </div>
-        <ul tabindex="-1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-          <li>
-            <a class="justify-between">
-              Profile
-              <span class="badge">New</span>
-            </a>
-          </li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About us </a></li>
-          <li><a href="membership.html">Membership</a></li>
-          <li><a href="product.html">Product</a></li>
-          <li><a href="meeting.html">Meetings</a></li>
-          <li><a href="Contacts.html">Contacts </a></li>
-
-
-        </ul>
-      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li>
+          <a class="justify-between">
+            Profile
+            <span class="badge">New</span>
+          </a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us </a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="meeting.html">Meetings</a></li>
+        <li><a href="Contacts.html">Contacts </a></li>
+      </ul>
     </div>
   </div>
+</div>
 
-  <div class="flex flex-col gap-6 max-w-4xl mx-auto">
-    <h1>
-      <P> In Person</P>
-    </h1>
-    <h1>
-      <p>Submission Form</p>
-    </h1>
-
-    <label class="input w-full validator">
-      <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
-          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-          <circle cx="12" cy="7" r="4"></circle>
-        </g>
-      </svg>
-      <input type="text" required placeholder="Full Name" pattern="[A-Za-z][A-Za-z0-9\-]*" minlength="3" maxlength="30"
-        title="Only letters, numbers or dash" />
-    </label>
-
-    <label class="input w-full validator">
-      <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-
-        <g fill="none">
-          <path
-            d="M7.25 11.5C6.83579 11.5 6.5 11.8358 6.5 12.25C6.5 12.6642 6.83579 13 7.25 13H8.75C9.16421 13 9.5 12.6642 9.5 12.25C9.5 11.8358 9.16421 11.5 8.75 11.5H7.25Z"
-            fill="currentColor"></path>
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M6 1C4.61929 1 3.5 2.11929 3.5 3.5V12.5C3.5 13.8807 4.61929 15 6 15H10C11.3807 15 12.5 13.8807 12.5 12.5V3.5C12.5 2.11929 11.3807 1 10 1H6ZM10 2.5H9.5V3C9.5 3.27614 9.27614 3.5 9 3.5H7C6.72386 3.5 6.5 3.27614 6.5 3V2.5H6C5.44771 2.5 5 2.94772 5 3.5V12.5C5 13.0523 5.44772 13.5 6 13.5H10C10.5523 13.5 11 13.0523 11 12.5V3.5C11 2.94772 10.5523 2.5 10 2.5Z"
-            fill="currentColor"></path>
-        </g>
-      </svg>
-
-      <input type="tel" class="tabular-nums" required placeholder="Phone" pattern="[0-9]*" minlength="10" <div
-        class="join">
-    </label>
-    <div>
-      <label class="input w-full validator join-item">
+<body>
+  
+  <div class="hero bg-base-300 ">
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-5xl font-bold"> Welcome to the meeting page</h1>
+        <p class="py-6">
+          The meeting page is to make a appiontment with a therapist online or in person.
+        </p>
+        </div>
+    </div>
+  </div>
+  
+<br>
+<div class="m-8 ..."></div>
+<div class="flex flex-row justify-evenly"> 
+  
+  <div class="card w-96 bg-base-100 card-xl shadow-sm">
+    <div class="card-body">
+      <h2 class="card-title">In Person </h2>
+      <label class="input validator">
         <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
+          <g
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2.5"
+            fill="none"
+            stroke="currentColor"
+          >
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </g>
+        </svg>
+        <input
+          type="text"
+          required
+          placeholder="FUll Name "
+          pattern="[A-Za-z][A-Za-z0-9\-]*"
+          minlength="3"
+          maxlength="30"
+          title="Only letters, numbers or dash"
+        />
+      </label>
+      <p class="validator-hint">
+        Must be 3 to 30 characters
+        <br />containing only letters, or dash
+      </p>
+      <label class="input validator">
+        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <g fill="none">
+            <path
+              d="M7.25 11.5C6.83579 11.5 6.5 11.8358 6.5 12.25C6.5 12.6642 6.83579 13 7.25 13H8.75C9.16421 13 9.5 12.6642 9.5 12.25C9.5 11.8358 9.16421 11.5 8.75 11.5H7.25Z"
+              fill="currentColor"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6 1C4.61929 1 3.5 2.11929 3.5 3.5V12.5C3.5 13.8807 4.61929 15 6 15H10C11.3807 15 12.5 13.8807 12.5 12.5V3.5C12.5 2.11929 11.3807 1 10 1H6ZM10 2.5H9.5V3C9.5 3.27614 9.27614 3.5 9 3.5H7C6.72386 3.5 6.5 3.27614 6.5 3V2.5H6C5.44771 2.5 5 2.94772 5 3.5V12.5C5 13.0523 5.44772 13.5 6 13.5H10C10.5523 13.5 11 13.0523 11 12.5V3.5C11 2.94772 10.5523 2.5 10 2.5Z"
+              fill="currentColor"
+            ></path>
+          </g>
+        </svg>
+        <input
+          type="tel"
+          class="tabular-nums"
+          required
+          placeholder="Phone"
+          pattern="[0-9]*"
+          minlength="10"
+          maxlength="10"
+          title="Must be 10 digits"
+        />
+      </label>
+      <p class="validator-hint">Must be 10 digits</p>
+
+      <label class="input validator">
+        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <g
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2.5"
+            fill="none"
+            stroke="currentColor"
+          >
             <rect width="20" height="16" x="2" y="4" rx="2"></rect>
             <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
           </g>
         </svg>
-        <input type="email" placeholder="melishac23@gmail.com" required />
+        <input type="email" placeholder="melisha23@gmail.com " required />
       </label>
       <div class="validator-hint hidden">Enter valid email address</div>
-    </div>
-    <button class="btn btn-neutral join-item">submit</button>
-    <h1>
-      <P>Virtual</P>
-    </h1>
-    <h1>
-      <p>Submission Form</p>
-    </h1>
-    <label class="input w-full validator">
-      <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
-          <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-          <circle cx="12" cy="7" r="4"></circle>
-        </g>
-      </svg>
-
-      <input type="text" required placeholder="Full Name " pattern="[A-Za-z][A-Za-z0-9\-]*" minlength="3" maxlength="30"
-        title="Only letters, numbers or dash" />
-    </label>
-
-    <label class="input w-full validator">
-      <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-        <g fill="none">
-          <path
-            d="M7.25 11.5C6.83579 11.5 6.5 11.8358 6.5 12.25C6.5 12.6642 6.83579 13 7.25 13H8.75C9.16421 13 9.5 12.6642 9.5 12.25C9.5 11.8358 9.16421 11.5 8.75 11.5H7.25Z"
-            fill="currentColor"></path>
-          <path fill-rule="evenodd" clip-rule="evenodd"
-            d="M6 1C4.61929 1 3.5 2.11929 3.5 3.5V12.5C3.5 13.8807 4.61929 15 6 15H10C11.3807 15 12.5 13.8807 12.5 12.5V3.5C12.5 2.11929 11.3807 1 10 1H6ZM10 2.5H9.5V3C9.5 3.27614 9.27614 3.5 9 3.5H7C6.72386 3.5 6.5 3.27614 6.5 3V2.5H6C5.44771 2.5 5 2.94772 5 3.5V12.5C5 13.0523 5.44772 13.5 6 13.5H10C10.5523 13.5 11 13.0523 11 12.5V3.5C11 2.94772 10.5523 2.5 10 2.5Z"
-            fill="currentColor"></path>
-        </g>
-      </svg>
-      <input type="tel" class="tabular-nums" required placeholder="Phone" pattern="[0-9]*" minlength="10" maxlength="10"
-        title="(xxx)xxx-xxxx" />
-    </label>
-
-    <div class="join w-full">
-        <label class="input w-full validator join-item">
-          <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor">
-              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-            </g>
-          </svg>
-          <input type="email" placeholder="melishac23@gmail.com" required />
-        </label>
-        <div class="validator-hint hidden">Enter valid email address</div>
+      <div class="justify-end card-actions">
+        <button class="btn btn-primary">Submit</button>
       </div>
-      <button class="btn btn-neutral join-item">Submit</button>
-    
-
+    </div>
   </div>
+ 
+  
+  <div class="card w-96 bg-base-100 card-xl shadow-sm">
+    <div class="card-body">
+      <h2 class="card-title">Virtual </h2>
+      <label class="input validator">
+        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <g
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2.5"
+            fill="none"
+            stroke="currentColor"
+          >
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </g>
+        </svg>
+        <input
+          type="text"
+          required
+          placeholder="FUll Name "
+          pattern="[A-Za-z][A-Za-z0-9\-]*"
+          minlength="3"
+          maxlength="30"
+          title="Only letters, numbers or dash"
+        />
+      </label>
+      <p class="validator-hint">
+        Must be 3 to 30 characters
+        <br />containing only letters, or dash
+      </p>
+      <label class="input validator">
+        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <g fill="none">
+            <path
+              d="M7.25 11.5C6.83579 11.5 6.5 11.8358 6.5 12.25C6.5 12.6642 6.83579 13 7.25 13H8.75C9.16421 13 9.5 12.6642 9.5 12.25C9.5 11.8358 9.16421 11.5 8.75 11.5H7.25Z"
+              fill="currentColor"
+            ></path>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M6 1C4.61929 1 3.5 2.11929 3.5 3.5V12.5C3.5 13.8807 4.61929 15 6 15H10C11.3807 15 12.5 13.8807 12.5 12.5V3.5C12.5 2.11929 11.3807 1 10 1H6ZM10 2.5H9.5V3C9.5 3.27614 9.27614 3.5 9 3.5H7C6.72386 3.5 6.5 3.27614 6.5 3V2.5H6C5.44771 2.5 5 2.94772 5 3.5V12.5C5 13.0523 5.44772 13.5 6 13.5H10C10.5523 13.5 11 13.0523 11 12.5V3.5C11 2.94772 10.5523 2.5 10 2.5Z"
+              fill="currentColor"
+            ></path>
+          </g>
+        </svg>
+        <input
+          type="tel"
+          class="tabular-nums"
+          required
+          placeholder="Phone"
+          pattern="[0-9]*"
+          minlength="10"
+          maxlength="10"
+          title="Must be 10 digits"
+        />
+      </label>
+      <p class="validator-hint">Must be 10 digits</p>
+
+      <label class="input validator">
+        <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <g
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2.5"
+            fill="none"
+            stroke="currentColor"
+          >
+            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </g>
+        </svg>
+        <input type="email" placeholder="melisha23@gmail.com " required />
+      </label>
+      <div class="validator-hint hidden">Enter valid email address</div>
+   <div class="justify-end card-actions">
+        <button class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
